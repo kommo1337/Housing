@@ -1,0 +1,34 @@
+﻿<Window x:Class="Housing.WindowFolder.HousingComplex"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Housing.WindowFolder"
+        mc:Ignorable="d"
+        Title="HousingComplex" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel Orientation="Horizontal" Margin="10,10,28,357" >
+            <TextBox x:Name="nameFilterTextBox" Width="200"
+              
+              Height="41"/>
+            <TextBlock TextWrapping="Wrap" Text="Serach" Width="209" VerticalAlignment="Center" />
+        </StackPanel>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility ="Hidden" Margin="0,82,0,0">
+            <DataGrid x:Name="housingComplexGrid" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id_Housing_Complex}" />
+                    <DataGridTextColumn Header="Apartment Number" Binding="{Binding Apartment_Number}" />
+                    <DataGridTextColumn Header="Square" Binding="{Binding Square}" />
+                    <DataGridTextColumn Header="Rooms" Binding="{Binding Rooms}" />
+                    <DataGridTextColumn Header="Entrance" Binding="{Binding Entrance}" />
+                    <DataGridTextColumn Header="Storey" Binding="{Binding Storey}" />
+                    <DataGridTextColumn Header="Status Sale" Binding="{Binding Status_Sale}" />
+                    <DataGridTextColumn Header="Additional Cost of Finishing" Binding="{Binding Additional_Cost_Of_Finishing}" />
+                    <DataGridTextColumn Header="Cost Apartment Construction" Binding="{Binding Cost_Apartment_Construction}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+    </Grid>
+</Window>

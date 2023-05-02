@@ -1,0 +1,38 @@
+﻿<Window x:Class="HousingColledge.WindowFolder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HousingColledge.WindowFolder"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <StackPanel Orientation="Horizontal" Margin="10,10,28,357" >
+            <TextBox x:Name="nameFilterTextBox" Width="200"
+              
+             TextChanged="nameFilterTextBox_TextChanged" Height="41"/>
+            <TextBlock TextWrapping="Wrap" Text="Serach" Width="209" VerticalAlignment="Center" />
+            <Button Content="Button" Width="144" Click="Button_Click"/>
+        </StackPanel>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility ="Hidden" Margin="0,82,0,0">
+            <DataGrid x:Name="housingComplexDataGrid"
+          AutoGenerateColumns="False"  Height="337" Width="995"
+          >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto" />
+                    <DataGridTextColumn Header="Street" Binding="{Binding Street}" Width="Auto" />
+                    <DataGridTextColumn Header="Number House" Binding="{Binding Number_House}" Width="Auto" />
+                    <DataGridTextColumn Header="Cost House Construction" Binding="{Binding Cost_House_Construction}" Width="Auto" />
+                    <DataGridTextColumn Header="Additional Cost Apartment House" Binding="{Binding Additional_Cost_Apartament_House}" Width="Auto" />
+                    <DataGridTextColumn Header="Name Housing Complex" Binding="{Binding Name_Housing_Complex}" Width="Auto" />
+                    <DataGridTextColumn Header="City" Binding="{Binding City}" Width="Auto" />
+                    <DataGridTextColumn Header="Status Construction Housing Complex" Binding="{Binding Status_Construction_Housing_Complex}" Width="Auto" />
+                    <DataGridTextColumn Header="Added Value" Binding="{Binding Added_Value}" Width="Auto" />
+                    <DataGridTextColumn Header="Building Costs" Binding="{Binding Building_Costs}" Width="Auto" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+    </Grid>
+</Window>

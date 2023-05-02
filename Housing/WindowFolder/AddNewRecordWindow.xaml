@@ -1,0 +1,63 @@
+﻿<Window x:Class="Housing.WindowFolder.AddNewRecordWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Housing.WindowFolder"
+        mc:Ignorable="d"
+        Title="AddNewRecordWindow" Height="450" Width="800">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Id_Housing_Complex:" />
+            <TextBox Grid.Row="0" Grid.Column="1" x:Name="txtId" />
+            <Label Grid.Row="1" Grid.Column="0" Content="Apartment_Number:" />
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtApartmentNumber" />
+            <Label Grid.Row="2" Grid.Column="0" Content="Square:" />
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtSquare" />
+            <Label Grid.Row="3" Grid.Column="0" Content="Rooms:" />
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="txtRooms" />
+            <Label Grid.Row="4" Grid.Column="0" Content="Entrance:" />
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="txtEntrance" />
+            <Label Grid.Row="5" Grid.Column="0" Content="Storey:" />
+            <TextBox Grid.Row="5" Grid.Column="1" x:Name="txtStorey" />
+            <Label Grid.Row="6" Grid.Column="0" Content="Status_Sale:" />
+            <TextBox Grid.Row="6" Grid.Column="1" x:Name="txtStatusSale" />
+            <Label Grid.Row="7" Grid.Column="0" Content="Additional_Cost_Of_Finishing:" />
+            <TextBox Grid.Row="7" Grid.Column="1" x:Name="txtAdditionalCost" />
+            <Label Grid.Row="8" Grid.Column="0" Content="Cost_Apartment_Construction:" />
+            <TextBox Grid.Row="8" Grid.Column="1" x:Name="txtCostConstruction" />
+            <Button Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Content="
+Save" Width="100" Height="30" Margin="10" Click="SaveButton_Click" />
+            <Button Grid.Row="9" Grid.Column="1" Content="Cancel" Width="100" Height="30" Margin="10" Click="Button_Click" />
+        </Grid>
+</Window>
